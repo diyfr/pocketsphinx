@@ -1,0 +1,46 @@
+# ps3 eye
+## Suggested by http://julius.sourceforge.jp/forum/viewtopic.php?f=9&t=66
+## relay by https://me.m01.eu/blog/2014/07/an-asoundrc-alsa-config-for-the-ps3-eye/
+pcm.array {
+  type hw
+  card CameraB409241
+}
+
+pcm.array_gain {
+  type softvol
+  slave {
+    pcm "array"
+  }
+  control {
+    name "Mic Gain"
+    count 2
+  }
+  min_dB -10.0
+  max_dB 5.0
+}
+
+pcm.cap {
+  type plug
+  slave {
+    pcm "array_gain"
+    channels 4
+  }
+  route_policy sum
+}
+
+pcm.!default {
+    type asym
+    
+    playback.pcm {
+     type plug
+      slave.pcm {
+	@func getenv
+	vars [ ALSAPCM ]
+	default "hw:PCH"
+      }
+    }
+    capture.pcm {
+        type plug
+        slave.pcm "cap"
+    }
+}
