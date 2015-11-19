@@ -37,3 +37,15 @@ sudo make install
 ```
 
 A suivre...... en français bien sûr
+
+
+
+
+sources
+
+[http://wiki.labomedia.org/index.php/Reconnaissance_vocale_avec_sphinx]  
+[http://cmusphinx.sourceforge.net/wiki/raspberrypi]  
+
+Pour plus tart avec la ps3Eye  
+[https://me.m01.eu/blog/2014/07/an-asoundrc-alsa-config-for-the-ps3-eye/]
+
