@@ -6,8 +6,10 @@ Ou comment donner une oreille à votre rapsberry
 `sudo su`
 `apt-get upgrade`
 
-Perso je préferre lancer dans un process à part vu que je suis en SSH. J'utilise screen (screen -r pour récupérer une vue en cours et Ctrl+A+D pour passer de la vue courante à la sortie principale) 
+Perso je préferre lancer dans un process à part vu que je suis en SSH. J'utilise screen (screen -r pour récupérer une vue en cours et Ctrl+A+D pour passer de la vue courante à la sortie principale)   
+
 `apt-get install screen`  
+
 Dépendances pour le build  
 `sudo apt-get install bison libasound2-dev swig python-dev`
 
