@@ -47,7 +47,9 @@ dmesg
 [ 1643.549029] usb 1-1.2: 3:1: cannot get min/max values for control 2 (id 3)
 ```
 !!!! cannot get min/max values for control 2   
+TODO :
 
+see /usr/share/alsa/conf.d  ../cards     
 to read  
 [https://github.com/tdicola/DemoManMonitor]  
 [http://renatocunha.com/blog/2012/04/playstation-eye-audio-linux/]  
