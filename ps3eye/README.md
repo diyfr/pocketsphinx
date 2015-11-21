@@ -31,7 +31,7 @@ arecord -d 10 -D plughw:1,0 test.wav
 ```  
 On règle le volume de la sortie audio (ici jack =1 ) puis on écoute notre fichier wav
 ```
-$amixer cset numid=3 1
+$amixer cget numid=3 1
 $aplay test.wav
 ```
 pssshhhhhhhh !!! ;(  
