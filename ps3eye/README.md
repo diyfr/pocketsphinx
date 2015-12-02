@@ -48,6 +48,34 @@ dmesg
 ```
 !!!! cannot get min/max values for control 2   
 TODO :
+Bon on essaye avec pulseaudio suivant ce tuto  
+[https://coderwall.com/p/_a_scg/how-to-setup-speech-recognition-using-a-raspberrypi-pocketsphinx-ps3eye]  
+```
+$apt-get install pulseaudio
+```
+ensuite on crée le fichier de configuration  alsa pour pulseaudio
+```
+
+sudo \cp -pf /etc/asound.conf /etc/asound.conf.ORIG 
+sudo echo 'pcm.pulse {
+    type pulse
+}
+
+ctl.pulse {
+    type pulse
+}
+
+pcm.!default {
+    type pulse
+}
+
+ctl.!default {
+    type pulse
+}' > /etc/asound.conf
+
+
+```
+
 
 see /usr/share/alsa/conf.d  ../cards     
 to read  
