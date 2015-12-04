@@ -34,6 +34,11 @@ On règle le volume de la sortie audio (ici jack =1 ) puis on écoute notre fich
 $amixer cget numid=3 1
 $aplay test.wav
 ```
+Niveau enregistrement  
+```
+arecord -vv /dev/null -r 16000 -f S16_LE -c 4 -D iec958:CARD=CameraB409241,DEV=0 /dev/null < /dev/null
+```  
+
 pssshhhhhhhh !!! ;(  
 dmesg  
 ```
@@ -73,8 +78,35 @@ ctl.!default {
     type pulse
 }' > /etc/asound.conf
 
+reboot
+
 pactl set-card-profile alsa_card.usb-OmniVision_Technologies__Inc._USB_Camera-B4.09.24.1-01-CameraB409241 input:analog-4-channel-input
 ```
+tiens ce fichier me parait bien rempli 
+/usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf 
+```
+
+[Mapping analog-4-channel-input]
+# Alsa doesn't currently provide any better device name than "hw" for 4-channel
+# input. If this causes trouble at some point, then we will need to get a new
+# device name standardized in alsa.
+device-strings = hw:%f
+channel-map = aux0,aux1,aux2,aux3
+priority = 1
+direction = input
+```
+donc normalement cela devrait fonctionner
+
+```
+alsamixer
+```
+
+deux voies ...   
+
+
+
+
+
 
 
 see /usr/share/alsa/conf.d  ../cards     
@@ -82,5 +114,5 @@ to read
 [https://github.com/tdicola/DemoManMonitor]  
 [http://renatocunha.com/blog/2012/04/playstation-eye-audio-linux/]  
 [https://bugs.launchpad.net/ubuntu/+source/pulseaudio/+bug/886449]
-
+[https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=15851&p=160394#p160394]
 
