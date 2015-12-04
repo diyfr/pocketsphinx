@@ -73,7 +73,7 @@ ctl.!default {
     type pulse
 }' > /etc/asound.conf
 
-
+pactl set-card-profile alsa_card.usb-OmniVision_Technologies__Inc._USB_Camera-B4.09.24.1-01-CameraB409241 input:analog-4-channel-input
 ```
 
 
@@ -81,5 +81,6 @@ see /usr/share/alsa/conf.d  ../cards
 to read  
 [https://github.com/tdicola/DemoManMonitor]  
 [http://renatocunha.com/blog/2012/04/playstation-eye-audio-linux/]  
+[https://bugs.launchpad.net/ubuntu/+source/pulseaudio/+bug/886449]
 
 
