@@ -111,8 +111,14 @@ deux voies ...
 
 see /usr/share/alsa/conf.d  ../cards     
 to read  
+[http://www.pobot.org/Son-et-image-avec-la-Sony-PS3-Eye.html]  
 [https://github.com/tdicola/DemoManMonitor]  
 [http://renatocunha.com/blog/2012/04/playstation-eye-audio-linux/]  
-[https://bugs.launchpad.net/ubuntu/+source/pulseaudio/+bug/886449]
-[https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=15851&p=160394#p160394]
+[https://bugs.launchpad.net/ubuntu/+source/pulseaudio/+bug/886449]  
+[https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=15851&p=160394#p160394]  
+[https://coderwall.com/p/_a_scg/how-to-setup-speech-recognition-using-a-raspberrypi-pocketsphinx-ps3eye]  
+
+Localisation par microphone : [http://www.pobot.org/Localisation-du-son-sur-Raspberry-Pi.html]  
+Un truc de malade hark mais en japonais [http://www.hark.jp/wiki.cgi?page=PlayStationEyeMain]  
+
 
