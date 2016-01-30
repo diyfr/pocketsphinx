@@ -17,7 +17,7 @@ cat /proc/asound/cards
 
 Liste des devices d'enregistrement audio  
 ```
-$arecord —list-devices
+$arecord --list-devices
 **** Liste des Périphériques Matériels CAPTURE ****
 carte 1: CameraB409241 [USB Camera-B4.09.24.1], pÃ©riphÃ©rique 0: USB Audio [USB Audio]
   Sous-périphériques: 1/1
