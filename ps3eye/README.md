@@ -36,7 +36,7 @@ $aplay test.wav
 ```
 Niveau enregistrement  
 ```
-arecord -vv /dev/null -r 16000 -f S16_LE -c 4 -D iec958:CARD=CameraB409241,DEV=0 /dev/null < /dev/null
+arecord -vv /dev/null -r 16000 -f S16_LE -c 4 -D plughw:1,0 /dev/null < /dev/null
 ```  
 
 pssshhhhhhhh !!! ;(  
