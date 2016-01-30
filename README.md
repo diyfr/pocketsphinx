@@ -39,7 +39,7 @@ sudo make install
 A suivre...... en français bien sûr
 
 ```
-pocketsphinx_continuous -dict /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/frenchWords62K.dic -lm  /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/french3g62K.lm.dmp -adcdev plughw:1,0 -verbose yes -samprate 16000 -inmic yes -hmm /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr/
+pocketsphinx_continuous -dict /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr.dic -lm  /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr.lm.bin -hmm /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr/ -adcdev plughw:1,0 -verbose yes -samprate 16000 -inmic yes 
 
 ```
 
