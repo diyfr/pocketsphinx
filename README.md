@@ -24,6 +24,7 @@ make clean all
 make check
 sudo make install
 ```
+Nota : erreur sur test_fe . picth. bug connu mais non corrigé à ce jour. poursuivre l'installation  (make install)  
 On récupère pocketsphinx  
 ```
 wget http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
