@@ -37,6 +37,11 @@ make check
 sudo make install
 ```
 
+depuis le dépot GIT  
+https://github.com/cmusphinx/  
+nécessite au préalable autoconf libtool
+
+
 A suivre...... en français bien sûr
 
 ```
