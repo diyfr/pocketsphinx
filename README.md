@@ -44,6 +44,23 @@ nécessite au préalable autoconf libtool
 
 A suivre...... en français bien sûr
 
+Editer
+```
+/usr/share/alsa/alsa.conf
+```
+remplacer  
+```
+defaults.ctl.card 0
+defaults.pcm.card 0
+```
+par  
+```
+defaults.ctl.card 1
+defaults.pcm.card 1
+```  
+
+
+
 ```
 pocketsphinx_continuous -dict /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr.dic -lm  /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr.lm.bin -hmm /home/pi/pocketsphynx/usr/local/share/pocketsphinx/model/fra-fr/fra-fr/ -adcdev plughw:1,0 -verbose yes -samprate 16000 -inmic yes 
 
