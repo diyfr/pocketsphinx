@@ -1,5 +1,6 @@
 #MEMO DES COMMANDES
-Liste des périphériques USB   
+(LE lien pour arecord)[http://xmodulo.com/how-to-capture-microphone-input-to-wav-format-file.html]  
+Liste des périphériques USB    
 ```
 $lsusb
 .....
