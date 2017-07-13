@@ -1,4 +1,7 @@
 # ps3 eye
+
+#use  vars [ ALSAPCM ]
+#        default "hw:0,0" for default alsa audio aux input
 ## Suggested by http://julius.sourceforge.jp/forum/viewtopic.php?f=9&t=66
 ## relay by https://me.m01.eu/blog/2014/07/an-asoundrc-alsa-config-for-the-ps3-eye/
 pcm.array {
